@@ -53,7 +53,7 @@ function App() {
               </Card.Title>
               <Card.Body>
                 <form onSubmit={myformik.handleSubmit}>
-                  <label for="emailField" className="form-label">
+                  <label htmlFor="emailField" className="form-label">
                     Email
                   </label>
                   <input
@@ -69,7 +69,7 @@ function App() {
                         {myformik.errors.email}
                       </div>
                     ) : null}
-                  <label for="emailField" className="form-label mt-4">
+                  <label htmlFor="emailField" className="form-label mt-4">
                     Password
                   </label>
                   <input
@@ -96,6 +96,7 @@ function App() {
                     Submit
                   </Button>
                 </form>
+                <span style={{padding:10, fontSize: 11}}>Developed by otaneR ocraM</span>
               </Card.Body>
             </Card>
           </Col>
